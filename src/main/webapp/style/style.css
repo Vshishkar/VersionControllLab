@@ -37,5 +37,13 @@ body{
 }
 
 .gretting-text{
+    padding: 20px;
     width: 50%;
+}
+
+.custom-sign-in-form{
+    padding-top: 10%;
+    margin: auto;
+    width: 60%;
+
 }

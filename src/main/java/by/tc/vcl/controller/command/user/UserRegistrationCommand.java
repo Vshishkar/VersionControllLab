@@ -1,10 +1,11 @@
-package by.tc.vcl.controller.command;
+package by.tc.vcl.controller.command.user;
 
 import java.io.IOException;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import by.tc.vcl.controller.command.Command;
 import by.tc.vcl.entity.User;
 import by.tc.vcl.entity.UserDetails;
 import by.tc.vcl.service.UserService;
