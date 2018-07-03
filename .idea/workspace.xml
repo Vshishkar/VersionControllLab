@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a1a14046-40d4-446b-9943-020c2b479e59" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/tc/vcl/controller/FrontController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/tc/vcl/controller/command/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/tc/vcl/controller/command/UserRegistrationCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/tc/vcl/dao/DAOFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/tc/vcl/dao/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/tc/vcl/dao/UserDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/tc/vcl/dao/config/DBParameter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/tc/vcl/dao/config/DBResourseManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/tc/vcl/dao/exception/ConnectionPoolException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/tc/vcl/dao/exception/DAOException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/tc/vcl/dao/pool/ConnectionPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/tc/vcl/dao/pool/PooledConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/tc/vcl/dao/query/DBQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/tc/vcl/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/tc/vcl/entity/UserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/tc/vcl/service/ServiceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/tc/vcl/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/tc/vcl/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/tc/vcl/service/exception/ServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/tc/vcl/test/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/tc/vcl/controller/FrontController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/tc/vcl/controller/command/Command.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/tc/vcl/controller/command/UserRegistrationCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/tc/vcl/dao/DAOFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/tc/vcl/dao/UserDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/tc/vcl/dao/UserDAOImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/tc/vcl/dao/config/DBParameter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/tc/vcl/dao/config/DBResourseManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/tc/vcl/dao/exception/ConnectionPoolException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/tc/vcl/dao/exception/DAOException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/tc/vcl/dao/pool/ConnectionPool.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/tc/vcl/dao/pool/PooledConnection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/tc/vcl/dao/query/DBQuery.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/tc/vcl/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/tc/vcl/entity/UserDetails.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/tc/vcl/service/ServiceFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/tc/vcl/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/tc/vcl/service/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/tc/vcl/service/exception/ServiceException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/by/tc/vcl/test/MainTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tomcat/conf/logging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tomcat/conf/tomcat-users.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tomcat/conf/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2018-07-03" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/vcl/org/apache/jsp/index_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/vcl/org/apache/jsp/index_jsp.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="85" />
+    <option name="y" value="25" />
+    <option name="width" value="1750" />
+    <option name="height" value="970" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="vcl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vcl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vcl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vcl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vcl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vcl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vcl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vcl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vcl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vcl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="vcl-run" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map>
+                <entry key="X" value="false" />
+              </map>
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method>
+        <option name="LaunchBrowser.Before.Run" browser="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" url="http://localhost:8080/vcl/" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a1a14046-40d4-446b-9943-020c2b479e59" name="Default" comment="" />
+      <created>1530619369020</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1530619369020</updated>
+      <workItem from="1530619372712" duration="143000" />
+      <workItem from="1530619742101" duration="478000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="621000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32968536" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Web" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.32968536" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+main{
+    margin-top: 7%;
+}
+
+.custom-nav{
+    max-width:1200px;
+    width:1200px;
+    margin:auto;
+
+}
+
+.custom-nav-contanier{
+    display: inline;
+    background-color: black;
+}
+
+body{
+    max-width:1200px;
+    width:1200px;
+    margin:auto;
+
+}
+
+.gretting-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: inherit;
+    margin: auto;
+    background-color: #f0f0f0;
+}
+
+.registration-form{
+    width:50%;
+}
+
+.gretting-text{
+    width: 50%;
+}
