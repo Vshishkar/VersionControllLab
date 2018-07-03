@@ -76,20 +76,21 @@
 
 		<div class="registration-form">
 
-			<form class="form-signin custom-sign-in-form" action="FrontController">
+			<form class="form-signin custom-sign-in-form" action="FrontController" method="post">
+				<input name="command" value="register" type="hidden"/>
 				<h2 class="form-signin-heading">Please sign in</h2>
-				<label for="inputEmail" class="sr-only"> Username</label>
-				<input type="email" id="inputUsername" class="form-control" placeholder="Username " required="" autofocus="">
+				<label  class="sr-only" > Username</label>
+				<input name="login" value="" id="inputUsername" class="form-control" placeholder="Username " required="" autofocus="">
 
 				<label for="inputEmail" class="sr-only">Email address</label>
-				<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+				<input name="email" value="" type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
 				<label for="inputPassword" class="sr-only">Password</label>
-				<input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+				<input  name="password" value="" type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
 				<div class="checkbox">
 					<label>
 						<input type="checkbox" value="remember-me"> Remember me					          </label>
 				</div>
-				<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+				<button class="btn btn-lg btn-primary btn-block" type="submit" >Sign up</button>
 			</form>
 
 		</div>

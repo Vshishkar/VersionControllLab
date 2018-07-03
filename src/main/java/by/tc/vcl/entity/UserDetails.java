@@ -67,5 +67,9 @@ public class UserDetails {
 	
 		return this.getUsername() == other.getUsername() && this.getEmail() == other.getEmail();		
 	}
-	
+
+	@Override
+	public String toString() {
+		return username + " " + password + " " + email + " \n";
+	}
 }

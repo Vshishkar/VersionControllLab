@@ -2,6 +2,7 @@ package by.tc.vcl.controller.command.user;
 
 import java.io.IOException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -14,14 +15,19 @@ import by.tc.vcl.service.exception.ServiceException;
 
 public class UserRegistrationCommand implements Command {
 
+	private static final String PATH = "/layout/profile.jsp";
+
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) {
 
-		String login =  (String) request.getParameter("Login");		
-		String password = (String) request.getParameter("Password");		
-		String email = (String) request.getParameter("Email");
-		
-		UserDetails userDetails = new UserDetails(login,email,password);				
+		String login =  (String) request.getParameter("login");
+		String password = (String) request.getParameter("lassword");
+		String email = (String) request.getParameter("email");
+
+		UserDetails userDetails = new UserDetails(login,email,password);
+
+		System.out.println(userDetails.toString());
+
 		ServiceFactory factory = ServiceFactory.getInstance();		
 		UserService service = factory.getUserService();
 		
@@ -31,11 +37,13 @@ public class UserRegistrationCommand implements Command {
 		} catch (ServiceException e) {
 			e.printStackTrace();
 			try {
-				response.sendRedirect("/WEB-INF/jsp/404.jsp");
+				response.sendRedirect("/layout/404.jsp");
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			}
 		}
+
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher(PATH);
 		
 	}
 

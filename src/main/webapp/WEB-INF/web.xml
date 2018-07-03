@@ -8,7 +8,7 @@
   	<servlet-name>FrontController</servlet-name>
   	<display-name>FrontController</display-name>
   	<description></description>
-  	<servlet-class>by.tc.vlc.controller.FrontController</servlet-class>
+  	<servlet-class>by.tc.vcl.controller.FrontController</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>FrontController</servlet-name>

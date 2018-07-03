@@ -2,7 +2,7 @@ package by.tc.vcl.controller.command;
 
 public class CommandDirector {
 
-    Command command;
+    private Command command;
 
     public CommandDirector(Command command) {
         this.command = command;
@@ -19,4 +19,5 @@ public class CommandDirector {
     public void setCommand(Command command) {
         this.command = command;
     }
+
 }
