@@ -1,8 +1,9 @@
 package by.tc.vcl.controller.command.user;
 
 import java.io.IOException;
-
-import javax.servlet.RequestDispatcher;
+import static by.tc.vcl.util.PageURL.*;
+import static by.tc.vcl.util.RequestParameterKey.*;
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -15,18 +16,15 @@ import by.tc.vcl.service.exception.ServiceException;
 
 public class UserRegistrationCommand implements Command {
 
-	private static final String PATH = "/layout/profile.jsp";
 
 	@Override
-	public void execute(HttpServletRequest request, HttpServletResponse response) {
+	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		String login =  (String) request.getParameter("login");
-		String password = (String) request.getParameter("lassword");
-		String email = (String) request.getParameter("email");
+		String login =  (String) request.getParameter(LOGIN);
+		String password = (String) request.getParameter(PASSWORD);
+		String email = (String) request.getParameter(EMAIL);
 
 		UserDetails userDetails = new UserDetails(login,email,password);
-
-		System.out.println(userDetails.toString());
 
 		ServiceFactory factory = ServiceFactory.getInstance();		
 		UserService service = factory.getUserService();
@@ -37,14 +35,13 @@ public class UserRegistrationCommand implements Command {
 		} catch (ServiceException e) {
 			e.printStackTrace();
 			try {
-				response.sendRedirect("/layout/404.jsp");
+				response.sendRedirect(request.getContextPath() + ERROR_PAGE);
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			}
 		}
 
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher(PATH);
-		
-	}
+		response.sendRedirect(PROFILE_PAGE);
+    }
 
 }

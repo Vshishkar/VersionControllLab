@@ -7,5 +7,7 @@ import by.tc.vcl.entity.UserDetails;
 public interface UserDAO {
 
 	 User createAccount(UserDetails userDetails) throws DAOException;
+
+	 User login(UserDetails userDetails) throws DAOException;
 	
 }

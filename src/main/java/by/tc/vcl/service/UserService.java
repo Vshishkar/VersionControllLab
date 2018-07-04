@@ -8,4 +8,6 @@ public interface UserService {
 
 	User createAccount(UserDetails userDetails) throws ServiceException;
 
+	User login(UserDetails userDetails) throws  ServiceException;
+
 }

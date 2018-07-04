@@ -25,7 +25,24 @@ public class UserServiceImpl implements UserService {
 			throw new ServiceException("Service Error: can't registrate user",e);
 		}
 		
-		return null;
+		return user;
+	}
+
+	@Override
+	public User login(UserDetails userDetails) throws ServiceException {
+
+		UserDAO userDAO = factory.getUserDAO();
+
+		User user = null;
+
+		try {
+			user = userDAO.login(userDetails);
+		} catch (DAOException e) {
+			e.printStackTrace();
+			throw new ServiceException("Service Error: can't login user",e);
+		}
+
+		return user;
 	}
 
 }

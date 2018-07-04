@@ -1,11 +1,11 @@
 package by.tc.vcl.dao;
 
 import static by.tc.vcl.dao.query.DBQuery.CREATE_NEW_USER;
+import static by.tc.vcl.dao.query.DBQuery.GET_USER_INFO;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
+import by.tc.vcl.dao.auth.Authentication;
 import by.tc.vcl.dao.exception.ConnectionPoolException;
 import by.tc.vcl.dao.exception.DAOException;
 import by.tc.vcl.dao.pool.ConnectionPool;
@@ -15,6 +15,7 @@ import by.tc.vcl.entity.UserDetails;
 public class UserDAOImpl implements UserDAO {
 
 	private PreparedStatement preparedStatement = null;
+	private ResultSet resultSet = null;
 	
 	@Override
 	public User createAccount(UserDetails userDetails) throws DAOException {
@@ -43,5 +44,47 @@ public class UserDAOImpl implements UserDAO {
 		return new User(username,username,email);
 	}
 
-	
+	@Override
+	public User login(UserDetails userDetails) throws DAOException {
+
+		String username = userDetails.getUsername();
+		String password = userDetails.getPassword();
+
+		User user = null;
+		ConnectionPool connectionPool = ConnectionPool.getInstanse();
+
+		try{
+			connectionPool.initPoolData();
+			Connection connection = connectionPool.takeConnection();
+
+			preparedStatement = connection.prepareStatement(GET_USER_INFO);
+			preparedStatement.setString(1,username);
+			preparedStatement.setString(2,password);
+			resultSet = preparedStatement.executeQuery();
+
+			//TODO Fix result set. Next line will throw new SQLException();
+
+			String DBUserPassword = resultSet.getString(3);
+			String DBUserUsername = resultSet.getString(1);
+			String DBUserEmail = resultSet.getString(2);
+
+			if(Authentication.comparePasswords(password,DBUserPassword)
+					&& Authentication.compareUsernames(username,DBUserUsername)){
+				user = new User(DBUserUsername,DBUserEmail,DBUserUsername);
+			}
+			else{
+				throw new DAOException("This user is already exists");
+			}
+
+
+		}catch (ConnectionPoolException e) {
+			throw new DAOException("Error establishing connection", e);
+		}
+		catch(SQLException e) {
+			throw new DAOException("Error executing sql query " , e);
+		}
+		return user;
+	}
+
+
 }

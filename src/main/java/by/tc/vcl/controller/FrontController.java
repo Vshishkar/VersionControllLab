@@ -29,26 +29,12 @@ public class FrontController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
 
-
-		String login =  (String) request.getParameter("login");
-		String password = (String) request.getParameter("password");
-		String email = (String) request.getParameter("email");
-
-		UserDetails userDetails = new UserDetails(login,email,password);
-
-		System.out.println(login + password + email);
-
-		System.out.println(userDetails.toString());
-
-/*
 		String commandType = request.getParameter("command");
 		System.out.println(commandType);
 		Command command = CommandType.getCommand(commandType);
 		CommandDirector commandDirector = new CommandDirector(command);
-		command.execute(request,response);*/
+		command.execute(request,response);
 	}
 
 	/**

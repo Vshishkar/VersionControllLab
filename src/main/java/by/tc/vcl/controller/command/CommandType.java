@@ -1,6 +1,7 @@
 package by.tc.vcl.controller.command;
 
 import by.tc.vcl.controller.command.user.UserRegistrationCommand;
+import by.tc.vcl.controller.command.user.UserSignInCommand;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,6 +12,7 @@ public class CommandType {
 
     static {
         commands.put("register",new UserRegistrationCommand());
+        commands.put("login",new UserSignInCommand());
     }
 
     public static Command getCommand(String key){
