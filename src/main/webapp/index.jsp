@@ -50,7 +50,7 @@
 
 				<ul class="navbar-nav">
 					<li class="nav-item active">
-						<a class="nav-link" href="#">Sign in</a>
+						<a class="nav-link" href="login">Sign in</a>
 					</li>
 					<li class="nav-item active">
 						<a class="nav-link disabled" href="#">Sign up</a>

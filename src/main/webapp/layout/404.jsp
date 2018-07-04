@@ -8,9 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>$Title$</title>
+    <title>Not found</title>
 </head>
 <body>
-$END$
+
+    <p> Something went wrong : ( </p>
+
 </body>
 </html>

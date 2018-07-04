@@ -14,5 +14,36 @@
   	<servlet-name>FrontController</servlet-name>
   	<url-pattern>/FrontController</url-pattern>
   </servlet-mapping>
+	
+
+    <servlet>
+        <servlet-name>LoginPage</servlet-name>
+        <jsp-file>/layout/loginPage.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginPage</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    
+
+	<servlet>
+		<servlet-name>ProfilePage</servlet-name>
+		<jsp-file>/layout/profile.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ProfilePage</servlet-name>
+		<url-pattern>/profile</url-pattern>
+	</servlet-mapping>		
+	
+	<servlet>
+		<servlet-name>ErrorPage</servlet-name>
+		<jsp-file>/layout/404.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ErrorPage</servlet-name>
+		<url-pattern>/error</url-pattern>
+	</servlet-mapping>
   
 </web-app>
