@@ -63,6 +63,7 @@ public class UserDAOImpl implements UserDAO {
 			resultSet = preparedStatement.executeQuery();
 
 			//TODO Fix result set. Next line will throw new SQLException();
+			resultSet.next();
 
 			String DBUserPassword = resultSet.getString(3);
 			String DBUserUsername = resultSet.getString(1);

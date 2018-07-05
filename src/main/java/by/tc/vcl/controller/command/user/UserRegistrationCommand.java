@@ -41,7 +41,7 @@ public class UserRegistrationCommand implements Command {
 			}
 		}
 
-		response.sendRedirect(PROFILE_PAGE);
+		response.sendRedirect(request.getContextPath() + PROFILE_PAGE);
     }
 
 }
