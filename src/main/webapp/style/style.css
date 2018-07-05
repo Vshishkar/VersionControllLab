@@ -11,15 +11,15 @@ main{
 
 }
 
-.custom-nav-contanier{
-    display: inline;
-    background-color: black;
-}
-
 body{
     max-width:1200px;
     width:1200px;
-    margin:auto;
+    margin:auto !important;
+
+}
+
+.header div{
+    max-height: 150px;
 
 }
 
@@ -53,3 +53,65 @@ body{
     width: 400px;
 
 }
+
+/* User Profile  */
+
+.profile-container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.profile-container p {
+    text-align: center;
+}
+
+.profile-info{
+    border: black 2px solid;
+
+    width: 30%;
+}
+
+
+.repository-container{
+    border: black 2px solid;
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.repository-list{
+    border: black 2px solid;
+    padding:10px;
+
+}
+
+.repository-bar{
+    border: black 2px solid;
+}
+
+
+
+.repository-list-item{
+    border: black 2px solid;
+}
+
+.profile-info .card{
+    margin-top: 100px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-info img{
+    width: 100px;
+    height: 100px;
+}
+
+.img-info{
+
+}
+
