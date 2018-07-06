@@ -64,9 +64,11 @@ body{
 
 }
 
+/*
 .profile-container p {
     text-align: center;
 }
+*/
 
 .profile-info{
     border: black 2px solid;
@@ -87,10 +89,14 @@ body{
     border: black 2px solid;
     padding:10px;
 
+
 }
 
 .repository-bar{
+    display: flex;
+    flex-direction: row;
     border: black 2px solid;
+    justify-content: space-around;
 }
 
 

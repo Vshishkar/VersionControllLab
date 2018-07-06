@@ -1,8 +1,8 @@
-package by.tc.vcl.dao;
+package by.tc.vcl.dao.user;
 
 import by.tc.vcl.dao.exception.DAOException;
-import by.tc.vcl.entity.User;
-import by.tc.vcl.entity.UserDetails;
+import by.tc.vcl.entity.user.User;
+import by.tc.vcl.entity.user.UserDetails;
 
 public interface UserDAO {
 

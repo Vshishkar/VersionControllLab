@@ -1,4 +1,4 @@
-    <%@ page import="by.tc.vcl.entity.User" %><%--
+    <%@ page import="by.tc.vcl.entity.user.User" %><%--
   Created by IntelliJ IDEA.
   User: vshishkarov
   Date: 03.07.2018
@@ -50,6 +50,14 @@
                 <div class="repository-bar">
 
                     <p class="lead"> List of repositories</p>
+
+
+
+                    <button type="submit" class="btn btn-success">
+                        <a href="/create_rep">Create Repository</a>
+                    </button>
+
+
 
                 </div>
 

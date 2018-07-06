@@ -1,7 +1,7 @@
 package by.tc.vcl.service;
 
-import by.tc.vcl.service.UserService;
-import by.tc.vcl.service.UserServiceImpl;
+import by.tc.vcl.service.user.UserService;
+import by.tc.vcl.service.user.UserServiceImpl;
 
 public class ServiceFactory {
 	private ServiceFactory() {};

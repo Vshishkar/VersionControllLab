@@ -1,4 +1,4 @@
-package by.tc.vcl.dao.auth;
+package by.tc.vcl.dao.user.auth;
 
 public class Authentication {
 
@@ -9,5 +9,7 @@ public class Authentication {
     public static boolean compareUsernames(String aUsername,String bUsername){
         return  aUsername.equals(bUsername);
     }
+
+    private Authentication(){};
 
 }

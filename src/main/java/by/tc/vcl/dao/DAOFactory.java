@@ -1,7 +1,7 @@
 package by.tc.vcl.dao;
 
-import by.tc.vcl.dao.UserDAO;
-import by.tc.vcl.dao.UserDAOImpl;
+import by.tc.vcl.dao.user.UserDAO;
+import by.tc.vcl.dao.user.UserDAOImpl;
 
 public class DAOFactory {
 private static final DAOFactory instance = new DAOFactory();

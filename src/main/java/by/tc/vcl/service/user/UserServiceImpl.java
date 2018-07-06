@@ -1,10 +1,10 @@
-package by.tc.vcl.service;
+package by.tc.vcl.service.user;
 
 import by.tc.vcl.dao.DAOFactory;
-import by.tc.vcl.dao.UserDAO;
+import by.tc.vcl.dao.user.UserDAO;
 import by.tc.vcl.dao.exception.DAOException;
-import by.tc.vcl.entity.User;
-import by.tc.vcl.entity.UserDetails;
+import by.tc.vcl.entity.user.User;
+import by.tc.vcl.entity.user.UserDetails;
 import by.tc.vcl.service.exception.ServiceException;
 
 public class UserServiceImpl implements UserService {

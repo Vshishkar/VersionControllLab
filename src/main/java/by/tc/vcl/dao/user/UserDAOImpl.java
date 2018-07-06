@@ -1,16 +1,16 @@
-package by.tc.vcl.dao;
+package by.tc.vcl.dao.user;
 
 import static by.tc.vcl.dao.query.DBQuery.CREATE_NEW_USER;
 import static by.tc.vcl.dao.query.DBQuery.GET_USER_INFO;
 
 import java.sql.*;
 
-import by.tc.vcl.dao.auth.Authentication;
+import by.tc.vcl.dao.user.auth.Authentication;
 import by.tc.vcl.dao.exception.ConnectionPoolException;
 import by.tc.vcl.dao.exception.DAOException;
 import by.tc.vcl.dao.pool.ConnectionPool;
-import by.tc.vcl.entity.User;
-import by.tc.vcl.entity.UserDetails;
+import by.tc.vcl.entity.user.User;
+import by.tc.vcl.entity.user.UserDetails;
 
 public class UserDAOImpl implements UserDAO {
 
@@ -65,7 +65,7 @@ public class UserDAOImpl implements UserDAO {
 			//TODO Fix result set. Next line will throw new SQLException();
 			resultSet.next();
 
-			String DBUserPassword = resultSet.getString(3);
+ 			String DBUserPassword = resultSet.getString(3);
 			String DBUserUsername = resultSet.getString(1);
 			String DBUserEmail = resultSet.getString(2);
 

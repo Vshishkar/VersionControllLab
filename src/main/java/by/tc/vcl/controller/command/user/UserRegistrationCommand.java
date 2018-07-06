@@ -8,9 +8,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import by.tc.vcl.controller.command.Command;
-import by.tc.vcl.entity.User;
-import by.tc.vcl.entity.UserDetails;
-import by.tc.vcl.service.UserService;
+import by.tc.vcl.entity.user.User;
+import by.tc.vcl.entity.user.UserDetails;
+import by.tc.vcl.service.user.UserService;
 import by.tc.vcl.service.ServiceFactory;
 import by.tc.vcl.service.exception.ServiceException;
 

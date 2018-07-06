@@ -1,4 +1,4 @@
-package by.tc.vcl.entity;
+package by.tc.vcl.entity.user;
 
 public class User {
 	

@@ -3,7 +3,6 @@ package by.tc.vcl.controller;
 import by.tc.vcl.controller.command.Command;
 import by.tc.vcl.controller.command.CommandDirector;
 import by.tc.vcl.controller.command.CommandType;
-import by.tc.vcl.entity.UserDetails;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
