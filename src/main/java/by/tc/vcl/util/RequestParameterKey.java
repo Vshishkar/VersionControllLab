@@ -16,5 +16,7 @@ public class RequestParameterKey {
 
     public static final String PASSWORD = "password";
 
+    public static final String REPOSITORY_TITLE = "repository_title";
+
     private RequestParameterKey(){};
 }

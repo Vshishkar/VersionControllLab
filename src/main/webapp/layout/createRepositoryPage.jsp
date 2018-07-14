@@ -14,5 +14,19 @@
 
 
 
-</body>
+
+    <form class="form-signin custom-sign-up-form" action="FrontController" method="post">
+
+            <input name="command" value="create_rep" type="hidden"/>
+            <h2 class="form-signin-heading">Please Enter Repository Title</h2>
+
+            <label  class="sr-only" > Repository Title</label>
+                <input name="repository_title" value=""  class="form-control" placeholder="Repository Title " required="" autofocus="">
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit" >Create Repository</button>
+    </form>
+
+
+
+    </body>
 </html>

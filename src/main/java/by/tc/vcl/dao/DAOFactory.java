@@ -1,5 +1,7 @@
 package by.tc.vcl.dao;
 
+import by.tc.vcl.dao.repository.RepositoryDAO;
+import by.tc.vcl.dao.repository.RepositoryDAOImpl;
 import by.tc.vcl.dao.user.UserDAO;
 import by.tc.vcl.dao.user.UserDAOImpl;
 
@@ -18,4 +20,9 @@ private static final DAOFactory instance = new DAOFactory();
 		return userDAO;
 	};
 
+	public final RepositoryDAO repositoryDAO = new RepositoryDAOImpl();
+
+	public RepositoryDAO getRepositoryDAO() {
+		return repositoryDAO;
+	}
 }

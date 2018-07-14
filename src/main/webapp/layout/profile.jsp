@@ -14,7 +14,8 @@
 
     <link rel="stylesheet" href="style/style.css">
 
-
+        <script src="jquery-3.3.1.min.js"></script>
+</head>
 
 <body>
 
@@ -52,11 +53,9 @@
                     <p class="lead"> List of repositories</p>
 
 
-
-                    <button type="submit" class="btn btn-success">
-                        <a href="/create_rep">Create Repository</a>
-                    </button>
-
+        <form class="form-inline mt-2 mt-md-0">
+            <a href="create_rep" class="btn btn-outline-success" role="button" aria-pressed="true">Create repository</a>
+        </form>
 
 
                 </div>
@@ -84,6 +83,9 @@
 
             </div>
         </div>
+
+
+        <script rel="script" src="js/profilePageAjax.js" ></script>
 
     </body>
 </html>
