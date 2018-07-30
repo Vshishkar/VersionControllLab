@@ -28,7 +28,8 @@ public class UserRegistrationCommand implements Command {
 
 		ServiceFactory factory = ServiceFactory.getInstance();		
 		UserService service = factory.getUserService();
-		
+
+		//TODO add user to session or enable aouto-login
 		User user = null;
 		try {
 			user =  service.createAccount(userDetails);

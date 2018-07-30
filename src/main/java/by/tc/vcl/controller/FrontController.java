@@ -32,7 +32,7 @@ public class FrontController extends HttpServlet {
 		String commandType = request.getParameter("command");
 		System.out.println(commandType);
 		Command command = CommandType.getCommand(commandType);
-		CommandDirector commandDirector = new CommandDirector(command);
+
 		command.execute(request,response);
 	}
 
